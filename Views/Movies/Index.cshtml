@@ -20,14 +20,13 @@
     {
         <div class="card">
             <a asp-action="Details" asp-route-id="@item.Id">
-            <div class="card-body">
-                <div class="card-img" style="background-image: url('@("MovieImages/" + item.ImageName)');">
+                <div class="card-body">
+                    <div class="card-img" style="background-image: url('@("MovieImages/" + item.ImageName)');">
+                    </div>
+                    <h5 class="card-title">
+                        @item.Title
+                    </h5>
                 </div>
-                <h5 class="card-title">
-                    @item.Title
-                </h5>
-                
-            </div>
             </a>
         </div>
     }
